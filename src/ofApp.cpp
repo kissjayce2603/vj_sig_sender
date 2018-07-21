@@ -16,26 +16,23 @@ void ofApp::update() {
 	while (ipad.hasWaitingMessages()) {
 		ofxOscMessage m;
 		ipad.getNextMessage(&m);
-		if (m.getAddress() == "ipad/method0") {
+		if (m.getAddress() == "/ipad/method0") {
 			method = 0;
 			for (int i = 0; i < std::size(set_unit_colors); i++) {
 				randomPosX[i] = ofRandom(pix.getWidth());
 				randomPosY[i] = ofRandom(pix.getHeight());
 			}
 		}
-		if (m.getAddress() == "ipad/method1") {
+		if (m.getAddress() == "/ipad/method1") {
 			method = 1;
 		}
-		if (m.getAddress() == "ipad/method2") {
+		if (m.getAddress() == "/ipad/method2") {
 			method = 2;
 		}
-		if (m.getAddress() == "ipad/fe") {
+		if (m.getAddress() == "/ipad/fe") {
 			fe = m.getArgAsInt(0);
 		}
-		if (m.getAddress() == "ipad/fe") {
-			fe = m.getArgAsInt(0);
-		}
-		if (m.getAddress() == "ipad/dc") {
+		if (m.getAddress() == "/ipad/dc") {
 			dc = m.getArgAsInt(0);
 		}
 	}
@@ -67,8 +64,8 @@ void ofApp::draw() {
 		
 		switch (method) {
 			case 0: set_unit_colors[i] = pix.getColor(randomPosX[i], randomPosY[i]); break;
-			case 1: set_unit_colors[i] = setFlash(mouseX*0.01,mouseY*0.01); break;
-			case 2: set_unit_colors[i] = setRandom(mouseX*0.01, mouseY*0.01); break;
+			case 1: set_unit_colors[i] = setFlash(fe, dc); break;
+			case 2: set_unit_colors[i] = setRandom(fe, dc); break;
 			default: set_unit_colors[i] = pix.getColor(randomPosX[i], randomPosY[i]); break;
 		}
 		

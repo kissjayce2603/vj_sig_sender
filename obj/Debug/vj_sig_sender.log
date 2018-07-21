@@ -1,4 +1,4 @@
-﻿  main.cpp
+﻿  ofApp.cpp
 d:\mylibn\toolslib\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofvec3f.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
 d:\mylibn\toolslib\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofvec2f.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
 d:\mylibn\toolslib\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
@@ -7,6 +7,8 @@ d:\mylibn\toolslib\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x
 d:\mylibn\toolslib\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 d:\mylibn\toolslib\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 d:\mylibn\toolslib\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+d:\mylibn\toolslib\of_v0.10.0_vs2017_release\apps\myapps\vj_sig_sender\src\ofapp.cpp(18): warning C4996: 'ofxOscReceiver::getNextMessage': Pass a reference instead of a pointer
+  d:\mylibn\toolslib\of_v0.10.0_vs2017_release\addons\ofxosc\src\ofxoscreceiver.h(72): note: see declaration of 'ofxOscReceiver::getNextMessage'
   vj_sig_sender.vcxproj -> D:\MyLibN\ToolsLib\of_v0.10.0_vs2017_release\apps\myApps\vj_sig_sender\bin\vj_sig_sender_debug.exe
   
   	                   2	D:\MyLibN\ToolsLib\of_v0.10.0_vs2017_release\libs\fmodex\lib\vs\x64\
